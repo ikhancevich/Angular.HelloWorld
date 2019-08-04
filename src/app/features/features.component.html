@@ -1,0 +1,11 @@
+<p>features:</p>
+
+<ul>
+    <li *ngFor='let feature of features'>
+        <a routerLink="/feature/{{feature.id}}">
+            <app-feature [id]="feature.id" [name]="feature.name" [details]="feature.details"></app-feature>
+        </a>
+    </li>
+</ul>
+
+total: {{dataCount}}
